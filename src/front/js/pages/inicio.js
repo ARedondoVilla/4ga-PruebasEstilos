@@ -22,10 +22,23 @@ export const Inicio = () => {
 					<h3>Otro texto random</h3>
 				</div>
 			</div>
-			<div className="row">
-				<div className="col-4 box py-3" />
-				<div className="col-4 box" />
-				<div className="col-4 box" />
+			<div className="row bg-color-row">
+				<div className="col-1 box py-3" />
+			</div>
+			<div className="row my-4">
+				<div className="col-4 py-3 box-card-form">
+					<div className="row">
+						<div className="col form-space text-center">
+							<h3>Card form</h3>
+						</div>
+					</div>
+					<hr className="solid" />
+					<div className="row justify-content-center mt-4">
+						<div className="col-6 text-center pos-button">
+							<button className="style-button">Pulsar</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
