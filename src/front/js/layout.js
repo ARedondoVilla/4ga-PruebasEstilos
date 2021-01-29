@@ -6,6 +6,7 @@ import { Home } from "./pages/home";
 import { Demo } from "./pages/demo";
 import { Single } from "./pages/single";
 import { Inicio } from "./pages/inicio";
+import { Test } from "./pages/test";
 
 import injectContext from "./store/appContext";
 
@@ -24,6 +25,9 @@ const Layout = () => {
 				<ScrollToTop>
 					<Navbar />
 					<Switch>
+						<Route exact path="/test">
+							<Test />
+						</Route>
 						<Route exact path="/">
 							<Home />
 						</Route>

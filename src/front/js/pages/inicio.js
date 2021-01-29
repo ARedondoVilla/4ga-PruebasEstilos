@@ -8,7 +8,7 @@ export const Inicio = () => {
 		<div className="container">
 			<div className="row">
 				<div className="col text-center">
-					<h1>Aplicando estilos aqui....a ver que cojones sale!!!!</h1>
+					<h1>Aplicando estilos</h1>
 				</div>
 			</div>
 			<div className="row align-items-center">
