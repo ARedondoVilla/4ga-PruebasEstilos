@@ -1,8 +1,22 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Context } from "../store/appContext";
 
 export const Inicio = () => {
 	const { store, actions } = useContext(Context);
+	const [text, setText] = useState("");
+	const [height, setHeight] = useState(0);
+
+	useEffect(
+		() => {
+			console.log(text.length);
+			console.log(height);
+			if (text.length % 85 === 0) {
+				setHeight(height + 1);
+				// console.log("han pasado 40");
+			}
+		},
+		[text.length % 85 === 0]
+	);
 
 	return (
 		<div className="container">
@@ -39,6 +53,14 @@ export const Inicio = () => {
 						</div>
 					</div>
 				</div>
+			</div>
+			<div className="row">
+				<textarea
+					className="form-control"
+					id="exampleFormControlTextarea1"
+					rows={height}
+					onChange={e => setText(e.target.value)}
+				/>
 			</div>
 		</div>
 	);
