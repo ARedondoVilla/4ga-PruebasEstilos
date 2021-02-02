@@ -13,6 +13,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 					background: "white",
 					initial: "white"
 				}
+			],
+			userPost: [
+				{ username: "Chicho Terremoto", text: "texto random de chicho terremoto" },
+				{ username: "Power Ranger Colorao", text: "texto random del colorao" }
 			]
 		},
 		actions: {

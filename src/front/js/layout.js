@@ -7,6 +7,7 @@ import { Demo } from "./pages/demo";
 import { Single } from "./pages/single";
 import { Inicio } from "./pages/inicio";
 import { Test } from "./pages/test";
+import { Option } from "./pages/option";
 
 import injectContext from "./store/appContext";
 
@@ -36,6 +37,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/inicio">
 							<Inicio />
+						</Route>
+						<Route exact path="/option">
+							<Option />
 						</Route>
 						<Route exact path="/single/:theid">
 							<Single />
