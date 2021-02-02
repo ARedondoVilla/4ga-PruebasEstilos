@@ -1,14 +1,17 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-export const Card = () => {
+export const Card = props => {
+	const { item } = props;
 	return (
 		<div className="row">
-			<h1>Esto es un componente</h1>
+			<h1>A ver si funciona</h1>
+			<h1>{item.username}</h1>
 		</div>
 	);
 };
 
-// Card.propTypes = {
-// 	post: PropTypes.object
-// };
+Card.propTypes = {
+	item: PropTypes.object
+};

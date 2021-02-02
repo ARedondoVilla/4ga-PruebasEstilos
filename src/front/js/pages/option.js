@@ -8,6 +8,14 @@ import { Card } from "../component/card";
 export const Option = () => {
 	const { store, actions } = useContext(Context);
 
+	const showPost = store.userPost.map((post, index) => {
+		return (
+			<div key={index}>
+				<Card item={post} />
+			</div>
+		);
+	});
+
 	return (
 		<div className="container">
 			<ul className="nav nav-pills mb-3 d-flex justify-content-around" id="pills-tab" role="tablist">
@@ -42,7 +50,7 @@ export const Option = () => {
 					id="post-user"
 					role="tabpanel"
 					aria-labelledby="pills-home-tab">
-					<Card />
+					{showPost}
 				</div>
 				<div className="tab-pane fade" id="post-feed" role="tabpanel" aria-labelledby="pills-profile-tab">
 					Opción 2
