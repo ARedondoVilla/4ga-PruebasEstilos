@@ -17,45 +17,35 @@ export const Option = () => {
 	});
 
 	return (
-		<div className="container">
-			<ul className="nav nav-pills mb-3 d-flex justify-content-around" id="pills-tab" role="tablist">
-				<li className="nav-item" role="presentation">
-					<a
-						className="nav-link active"
-						id="pills-home-tab"
-						data-toggle="pill"
-						href="#post-user"
-						role="tab"
-						aria-controls="pills-home"
-						aria-selected="true">
-						Mis publicaciones
-					</a>
-				</li>
-				<li className="nav-item" role="presentation">
-					<a
-						className="nav-link"
-						id="pills-profile-tab"
-						data-toggle="pill"
-						href="#post-feed"
-						role="tab"
-						aria-controls="pills-profile"
-						aria-selected="false">
-						Publicaciones de mi interes
-					</a>
-				</li>
-			</ul>
-			<div className="tab-content" id="pills-tabContent">
-				<div
-					className="tab-pane fade show active"
-					id="post-user"
-					role="tabpanel"
-					aria-labelledby="pills-home-tab">
-					{showPost}
-				</div>
-				<div className="tab-pane fade" id="post-feed" role="tabpanel" aria-labelledby="pills-profile-tab">
-					Opción 2
+		<>
+			<div className="container">
+				<div className="row">
+					<div className="col-12">
+						<h1>Titulo</h1>
+					</div>
+					<div className="col-12">
+						<h3>Subtitulo</h3>
+					</div>
+					<div className="col-12">
+						<div className="row justify-content-center">
+							<div className="col-9">
+								<p>
+									Lorem fistrum ese pedazo de no te digo trigo por no llamarte Rodrigor de la pradera
+									amatomaa la caidita a wan de la pradera sexuarl condemor condemor. Te va a hasé
+									pupitaa diodenoo diodeno ahorarr amatomaa se calle ustée torpedo la caidita hasta
+									luego Lucas. Ahorarr papaar papaar no te digo trigo por no llamarte Rodrigor
+									diodenoo a gramenawer qué dise usteer amatomaa. Por la gloria de mi madre a wan
+									fistro qué dise usteer benemeritaar te voy a borrar el cerito diodeno no te digo
+									trigo por no llamarte Rodrigor condemor. Fistro está la cosa muy malar pupita
+									fistro. Pupita tiene musho peligro quietooor de la pradera pecador te voy a borrar
+									el cerito caballo blanco caballo negroorl te voy a borrar el cerito.
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
+			<div className="fluid-container full-width-color" />
+		</>
 	);
 };
