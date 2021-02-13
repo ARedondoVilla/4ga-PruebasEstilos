@@ -1,13 +1,10 @@
 import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
-import { Modal } from "../component/modal";
+
 import { Link } from "react-router-dom";
 
 export const Test = () => {
 	const { store, actions } = useContext(Context);
-	const [state, setState] = useState({
-		showModal: false
-	});
 
 	return (
 		<div className="container">

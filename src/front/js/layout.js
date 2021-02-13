@@ -8,6 +8,7 @@ import { Single } from "./pages/single";
 import { Inicio } from "./pages/inicio";
 import { Test } from "./pages/test";
 import { Option } from "./pages/option";
+import { ModalTest } from "./pages/modal-test";
 
 import injectContext from "./store/appContext";
 
@@ -40,6 +41,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/option">
 							<Option />
+						</Route>
+						<Route exact path="/modal">
+							<ModalTest />
 						</Route>
 						<Route exact path="/single/:theid">
 							<Single />
